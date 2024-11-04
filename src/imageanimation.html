@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image animation</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: arial;text-align: center;
+        }
+        .img-container{
+            height: 200px;width: 350px;
+            border: 3px solid rgb(255, 255, 0);margin: 2rem auto;
+            transition: all 1.9s ease-out;
+            filter: saturate(2);overflow: hidden;
+           
+        }
+        .img-1{
+            height: 100%;width: 100%; transition: all 1.9s ease-out;
+        }
+        .img-animation{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0;
+            transform: scale(2.5);
+            transition: all 1.9s ease-out;
+            filter: contrast(10);
+            
+
+        }
+        .img-1{transform:rotate(-10deg);}
+        .img-container:hover .img-animation{
+            opacity: 1;
+            transform: scale(1);
+            filter:contrast(1) ;
+        }
+        .img-container:hover .img-1{
+            transform: rotate(0);
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>image animation hover the container to see the magic</h2>
+
+    <div class="img-container">
+        <div class="img-1">
+            <img class="img-animation" src="https://staticimg.amarujala.com/assets/images/2024/06/29/thal-ka-tamasa-payara-haaa_c5340ba343b3694aac05b6288ad2f43b.jpeg" alt="">
+            </div>
+            
+    </div>
+</body>
+</html>

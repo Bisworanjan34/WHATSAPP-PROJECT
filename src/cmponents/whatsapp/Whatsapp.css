@@ -1,0 +1,271 @@
+.whatsapp-div{
+    border: 2px solid black;
+    height: 100vh;
+    width:100%;
+    background-image: url('../../images/beautiful.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    user-select: none;
+    display: flex;
+    
+}
+.whatsapp-container{
+    height: 545px;
+    width: 40%;
+    background: rgb(243, 255, 243);
+    overflow: scroll;
+    scrollbar-width: none;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid green; */
+   
+}
+
+.whatsapp-container .settings{
+    position: absolute;
+    top: 2.7rem;right: 0;
+    height: 170px;
+    padding-top: 15px;
+    width: 110px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    /* text-align: center; */
+    /* padding: 23px 23px; */
+    /* border: 1px solid rgb(0, 160, 0); */
+    transform: translateX(6.8rem);
+    transition: all 0.3s ease-in-out;
+}
+.settings p{
+    font-size: 12px;
+    margin-bottom:4px ;
+    width: 110px;
+    padding: 4px 28px;
+}
+.settings p:hover{
+    background-color: rgba(205, 248, 208, 0.74);
+}
+.super-nav{
+    position: sticky;
+    top: 0;
+    background:rgb(243, 255, 243);
+    padding-bottom:10px;
+    z-index: 3;
+}
+.whatsapp-nav{
+    height: 50px;
+    width:100%;
+    background: rgb(255, 255, 255);
+    /* border-radius: 8px 8px 0 0 ; */
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.whatsapp-nav .logo .icon{
+    color: rgb(0, 197, 0);
+    margin-left: 20px;
+    transform: translatey(4px);
+}
+.whatsapp-nav b{
+    color: rgb(0, 187, 25);
+    font-size: 20px;
+    padding: 0 7px;
+}
+.whatsapp-nav .nav-items{
+    display: flex;
+    /* gap: 16px; */
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+}
+.meta-search{
+    height: 40px;
+    border: 1px solid rgb(169, 169, 169); 
+    border-radius: 17px;
+    width: 95%;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(230, 248, 228);
+}
+.meta-ball{
+    border-top: 4px solid blue;
+    border-right: 4px solid rgb(255, 0, 195);
+    border-bottom: 4px solid rgb(0, 247, 255);
+    border-left: 4px solid rgb(0, 34, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: -2rem;
+    animation: meta 1.3s  infinite;
+
+}
+.meta-search .meta-input{
+    width: 240px;
+    border-radius: 17px;
+    padding: 3px 10px;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 248, 228);
+    outline: none;
+    border:none;
+}
+.whatsapp-cata{
+    width: 92%;
+    display: flex;
+    /* justify-content: ; */
+    gap: 10px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}
+.whatsapp-cata button{
+   height: 30px;
+   border: 1px solid rgb(208, 208, 208);
+   border-radius: 15px;
+   font-size: 10px;
+   font-weight: bold;
+   color: rgb(113, 113, 113);
+   padding: 1px 17px;background-color: rgb(237, 252, 237);
+
+}
+.whatsapp-cata button:focus{
+    background: rgb(190, 247, 190);
+}
+/* -------meta ball animation------- */
+@keyframes meta{
+    0%{
+        transform: rotate(0);
+    }
+    20%{transform: rotate(90deg);}
+    40%{transform: rotate(130deg);}
+    60%{transform: rotatey(200deg);}
+    80%{transform: rotatey(260deg);}
+    90%{transform: rotate(300deg);}
+    100%{transform: rotate(360deg);}
+}
+.whatsapp-footer{
+    position: absolute;
+    background: rgb(228, 255, 232);
+    color: rgb(14, 172, 0);
+    position: fixed;
+    bottom: 2px;
+    height: 45px;
+    width: 40%;
+    /* border-radius:0 0 13px 13px; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 8px 0px;
+    /* padding-bottom: 5rem; */
+}
+.whatsapp-footer h5{
+    font-size: 10px;
+    /* border: 1px solid red; */
+    transform: translateX(2px);
+}
+.whatsapp-footer .footer-icons{
+    font-size: 13px;
+    border-radius: 10px;
+    width: 40px;
+    padding: 1px 3px;
+    text-align: center;
+    /* transform:translateX(8px); */
+    /* margin: auto; */
+}
+.whatsapp-footer .footer-icons:active{
+    background-color:rgb(149, 249, 142);
+}
+.extra-div{
+    height: 200px;
+    width: 100%;
+    color: green;
+    padding: 20px 0px;
+}
+.selected-user {
+    background-color: rgb(218, 253, 211);
+   
+  }
+
+  /* --------------------chart section whatsapp chart div  */
+  .whatsappchart-div{
+    height: 546px;
+    width: 60%;
+    background: rgb(243, 255, 243);
+    position: relative;
+}
+.whatsappchart-div .title{
+    height: 40px;
+    background-color: rgb(227, 255, 230);
+}
+.whatsappchart-div .title p{
+    color: rgb(0, 161, 0);
+    font-size: 20px;
+    line-height: 2.3rem;
+    padding-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid green;
+    /* box-shadow: 0 0 7px rgb(1, 114, 9); */
+}
+.whatsappchart-div .userchart-input{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    /* background: white; */
+    background: rgb(228, 255, 232);
+}
+.whatsappchart-div .userchart-input input{
+    width: 95%;
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius:20px ;
+    letter-spacing: 1px;
+    border:1px solid green;
+    outline: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: green;
+    
+}
+.userchart-div{
+    height: 430px;
+}
+.toggle-div{
+    width: 50px;
+    height: 20px;
+    background-color: rgba(194, 215, 190, 0.731);
+    margin-left: 15rem;
+    margin-top: 0.7rem;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.toggle{
+    height: 17px;
+    width: 17px;
+    margin-left: 2px;
+    border: 3px solid white;
+    background-color: rgb(38, 225, 1);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.active {
+    background-color: rgb(0, 183, 0);
+}
+.active .toggle{
+    background: white;
+    transform: translateX(29px);
+}
+.activechart{
+    background: rgba(0, 0, 0, 0.644);
+    color: rgb(24, 202, 0);
+    font-weight: bold;
+}
